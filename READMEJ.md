@@ -18,6 +18,8 @@ Visual Studio 2015以上
 
 Unity 2019.1以上
 
+CarSim 2019.1.1
+
 # Tutrial
 [tutriallink]:  https://github.com/BestMediaDeveloper/VsDotnet/blob/master/Documents/Tutrial_jp.md
 
@@ -25,7 +27,7 @@ Unity 2019.1以上
 
 # 現状及び今後
 
-Unity/CarSim連携 コーディング終了・基本デバッグ終了 デバッグ継続
+Unity/CarSim連携 コーディング終了・基本デバッグ終了 デバッグ継続及びコード整理
 
 VS Connect サーバ開発中
 

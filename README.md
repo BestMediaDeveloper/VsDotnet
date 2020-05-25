@@ -18,6 +18,8 @@ Visual Studio 2015 more
 
 Unity 2019.1 more
 
+CarSim 2019.1.1
+
 # Tutrial
 [tutriallink]:  https://github.com/BestMediaDeveloper/VsDotnet/blob/master/Documents/Tutrial.md
 
@@ -25,7 +27,7 @@ Unity 2019.1 more
 
 # Current Status and Future
 
-Unity/CarSim coordination End of coding, end of basic debugging Continued debugging
+Finish coding and basic debugging with Unity/CarSim. Continue debugging and organize code.
 
 VS Connect server under development
 
