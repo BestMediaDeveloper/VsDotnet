@@ -21,7 +21,8 @@ Unity 2019.1 more
 CarSim 2019.1.1
 
 # Tutrial
-[tutriallink]:  https://github.com/BestMediaDeveloper/VsDotnet/blob/master/Documents/Tutrial.md
+
+https://github.com/BestMediaDeveloper/VsDotnet/blob/master/Documents/Tutrial.md
 
 
 
@@ -39,4 +40,5 @@ VS Connect Client Not Started
 # Development Company
 
 BestMedia
+
 https://www.bestmedia.co.jp

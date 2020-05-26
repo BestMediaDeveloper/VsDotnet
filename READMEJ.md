@@ -21,7 +21,8 @@ Unity 2019.1以上
 CarSim 2019.1.1
 
 # Tutrial
-[tutriallink]:  https://github.com/BestMediaDeveloper/VsDotnet/blob/master/Documents/Tutrial_jp.md
+
+https://github.com/BestMediaDeveloper/VsDotnet/blob/master/Documents/Tutrial_jp.md
 
 
 
@@ -39,4 +40,5 @@ VS Connect クライアント　未着手
 # 開発会社
 
 BestMedia
+
 https://www.bestmedia.co.jp
