@@ -601,7 +601,7 @@ namespace BestMedia.VsUnity
         {
             get
             {
-                return UserSteer * VehicleData.MaxHandWheelAngleDegrees;
+                return -UserSteer * VehicleData.MaxHandWheelAngleDegrees;
             }
         }
 

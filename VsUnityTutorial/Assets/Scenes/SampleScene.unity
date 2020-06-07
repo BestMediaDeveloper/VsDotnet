@@ -690,6 +690,7 @@ MonoBehaviour:
   ClutchPedal: 0
   Steering: 0
   Speed: 0
+  RPM: 0
 --- !u!114 &1205958952
 MonoBehaviour:
   m_ObjectHideFlags: 0

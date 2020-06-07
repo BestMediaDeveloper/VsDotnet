@@ -272,6 +272,7 @@ namespace BestMedia.VsDotnet.vs_vehicle
                     Import_SetValuePtr = GetProcAddress(DllHandle, "vsew_Import_SetValue");
                     Import_GetLerpPtr = GetProcAddress(DllHandle, "vsew_Import_GetLerp");
 
+
                     if (
                         IntPtr.Zero == CreateVehiclePtr
                         || IntPtr.Zero == ReinitializeVehiclePtr

@@ -26,7 +26,7 @@ namespace BestMedia.VsUnity
 
         
         static public float VsFoward(this Vector3 v) => v.z;
-        static public float VsLeft(this Vector3 v) => v.x;
+        static public float VsLeft(this Vector3 v) => -v.x;
         static public float VsUp(this Vector3 v) => v.y;
 
 
@@ -41,7 +41,7 @@ namespace BestMedia.VsUnity
         public static Vector3 VSToUnityVector( double forward, double left, double up)
         {
 
-            return new Vector3((float)left, (float)up, (float)forward);
+            return new Vector3(-(float)left, (float)up, (float)forward);
 
         }
 
@@ -56,15 +56,15 @@ namespace BestMedia.VsUnity
         public static void UnityToVSVector(this Vector3 v, ref double forward, ref double left, ref double up)
         {
             forward = v.z;
-            left = v.x;
+            left = -v.x;
             up = v.y;
 
 
         }
 
-        static public double VsRoll(this Quaternion q) => q.eulerAngles.z * Math.PI / 180;
+        static public double VsRoll(this Quaternion q) => -q.eulerAngles.z * Math.PI / 180;
         static public double VsPitch(this Quaternion q) => q.eulerAngles.x * Mathf.PI / 180;
-        static public double VsYaw(this Quaternion q) => q.eulerAngles.y * Mathf.PI / 180;
+        static public double VsYaw(this Quaternion q) => -q.eulerAngles.y * Mathf.PI / 180;
 
         /// <summary>
         /// Carsim rotation(rad) to Unity Quaternion(deg)
@@ -75,7 +75,7 @@ namespace BestMedia.VsUnity
         /// <returns></returns>
         public static Quaternion VSToUnityRotation(double Roll, double Pitch, double Yaw)
         {
-            return Quaternion.Euler((float)(Pitch *  180/ Math.PI), (float)(Yaw * 180 / Math.PI), (float)(Roll * 180 / Math.PI));
+            return Quaternion.Euler((float)(Pitch *  180/ Math.PI), -(float)(Yaw * 180 / Math.PI), -(float)(Roll * 180 / Math.PI));
         }
 
 
@@ -91,8 +91,8 @@ namespace BestMedia.VsUnity
         {
             var euler = unity.eulerAngles;
             Pitch = euler.x * Math.PI / 180;
-            Yaw = euler.y * Math.PI / 180;
-            Roll = euler.z * Math.PI / 180;
+            Yaw = -euler.y * Math.PI / 180;
+            Roll = -euler.z * Math.PI / 180;
 
 
         }

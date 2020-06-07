@@ -35,9 +35,6 @@ namespace BestMedia.VsUnity
             vsConnectFixupdateObject.name = "VSConnectTickGameObject";
             vsConnectFixupdateObject.AddComponent(typeof(VsUnity.VSConnectTickComponent));
             vsConnectFixupdateObject.isStatic = true;
-#if !UNITY_EDITOR
-		    mVSConnectFixupdateObject.hideFlags = HideFlags.HideAndDontSave;
-#endif
             MonoBehaviour.DontDestroyOnLoad(vsConnectFixupdateObject);
 
         }
