@@ -45,7 +45,13 @@ namespace BestMedia.VsUnity
         
         IntPtr VsVehicleHandle => VehicleSolver.VsVehicleHandle;
 
+	
+		public float BodyOffset=0;
+		public LayerMask RayLayerMask=Physics.DefaultRaycastLayers;
         bool Destroied = false;
+        
+        public bool DebugShowRay=false;
+         
 
         #region Initialize_Vehicle_Create_SolverSet
 
@@ -87,7 +93,8 @@ namespace BestMedia.VsUnity
             Ray ray = new Ray(StartVect, DirVect);
 
             RaycastHit HitResult;
-            bool roadPointFound = Physics.Raycast(ray, out HitResult, (StartVect - EndVect).magnitude, Physics.DefaultRaycastLayers, QueryTriggerInteraction.Ignore);
+            bool roadPointFound = Physics.Raycast(ray, out HitResult, (StartVect - EndVect).magnitude, RayLayerMask, QueryTriggerInteraction.Ignore);
+            if(DebugShowRay) Debug.DrawRay(ray.origin, ray.direction* (StartVect - EndVect).magnitude, Color.red,0.1f );
 
             if (!roadPointFound)
             {
@@ -168,9 +175,9 @@ namespace BestMedia.VsUnity
 
         }
 
-        Vector3 ResetLocaion { get; set; }
+        internal Vector3 ResetLocaion { get; set; }
 
-        Quaternion ResetOrientation { get; set; }
+        internal Quaternion ResetOrientation { get; set; }
 
 
         public void SyncVsVehicleLocOri()
@@ -285,6 +292,9 @@ namespace BestMedia.VsUnity
                         //Log(forward + "," + left + "," + up);
 
                         VsUnityLib.SetUnityTransformFromSolverValues(this.gameObject, (float)forward, (float)left, (float)up, (float)rollRightRad, (float)pitchDownRad, (float)yawLeftRad);
+
+                        //Todo temporary change. more precise
+                        this.transform.position += this.transform.forward * BodyOffset;
 
 
 

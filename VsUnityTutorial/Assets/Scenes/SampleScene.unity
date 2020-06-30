@@ -716,6 +716,11 @@ MonoBehaviour:
     MaxHandWheelAngleDegrees: 360
     MaxThrottle: 1
     MaxBrakePedalForceNewtons: 750
+  BodyOffset: 0
+  RayLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967291
+  DebugShowRay: 1
 --- !u!1 &1376753500
 GameObject:
   m_ObjectHideFlags: 0

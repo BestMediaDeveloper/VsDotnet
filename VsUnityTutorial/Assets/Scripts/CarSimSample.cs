@@ -82,11 +82,11 @@ public class CarSimSample : MonoBehaviour
         
 
         //Set Tire transform
-        if (FrontLeftTireTransform!=null) CarSimMovement.SetTireTransform(FrontLeftTireTransform, 0, 0, 1);
-        if (FrontRightTireTransform != null) CarSimMovement.SetTireTransform(FrontRightTireTransform, 0, 0, 0);
+        if (FrontLeftTireTransform!=null) CarSimMovement.SetTireTransform(FrontLeftTireTransform, 0, 0, 0);
+        if (FrontRightTireTransform != null) CarSimMovement.SetTireTransform(FrontRightTireTransform, 0, 0, 1);
 
-        if (RearLeftTireTransform != null) CarSimMovement.SetTireTransform(RearLeftTireTransform, 0, 1, 1);
-        if (RearRightTireTransform != null) CarSimMovement.SetTireTransform(RearRightTireTransform, 0, 1, 0);
+        if (RearLeftTireTransform != null) CarSimMovement.SetTireTransform(RearLeftTireTransform, 0, 1, 0);
+        if (RearRightTireTransform != null) CarSimMovement.SetTireTransform(RearRightTireTransform, 0, 1, 1);
 
         
     }
